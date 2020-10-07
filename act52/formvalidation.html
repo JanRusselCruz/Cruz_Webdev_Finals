@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=">
+  <title></title>
+  <link rel="stylesheet" type="text/css" href="css/newstyle.css" />
+</head>
+<body>
+  <form name="form" action="/action_page.php">
+      
+      <table>
+        <legend>Sign up</legend>
+        <tr>
+          <td>First Name</td>
+          <td><input type="text" 
+                     id="txtName" 
+                     name="txtName"
+                     value=""
+                     />
+          </td>
+        </tr>
+        <tr>
+          <td>Last Name</td>
+          <td><input type="text"
+                     id="txtlastName"
+                     name="txtlastName"
+                     value=""
+                     />
+          </td>
+        </tr>
+          <tr>
+          <td>Username
+          <td><input type="text"
+                     id="txtuserName"
+                     name="txtuserName"
+                     pattern="[a-Za-Z0-9]+"
+                     placeholder="          letters and numbers only"
+                     required
+                     />
+          </td>
+        </tr>
+        
+        <tr>
+        <td colspan="1">
+        Date of Birth
+        <td colspan ="1">
+        <input type="date" id="DOB" name="DOB" required>
+        </td>
+        </tr>
+        
+        <tr>
+          <td colspan="1">
+           Status
+            <td><select name="drpMonth" id="drpMonth"required>
+              <option value="Single">Single</option>
+              <option value="Married">Married</option>
+              <option value="Widow">Widow</option>
+            </select>   
+          </td>
+        </tr>
+        
+        <tr>
+          <td>Gender</td>
+          <td>
+            <input type="radio" 
+                   id="genderType" 
+                   name="genderType"
+                   value = "Male"
+                   selected="selected"
+                   required/>
+            <label for="loginType">Male</label>
+            
+            <input type="radio"
+                   id="genderType"
+                   name="genderType"
+                   value="Female"
+                   required/>
+                   
+            <label for="loginType">Female</label>            
+          </td>
+        </tr>
+        
+        <tr>
+        <td>Email</td>
+        <td>
+        	<input type="email" id="email" name="email" value="" required>
+        </td>
+        </tr>
+        
+        <tr>
+        <td>Phone Number</td>
+        <td>
+        	<input type="tel" id="phoneNumber" name="phoneNumber" pattern="[0-9]{4}[0-9]{3}[0-9]{4}" required>
+        </td>
+        </tr>
+        
+        <tr>
+          <td>Password</td>
+          <td><input type="password" id="txtPassword" name="txtPassword" minlength="8" required/></td>
+        </tr>
+        <tr>
+          <td>Confirm Password</td>
+          <td><input type="password" id="txtPassword" name="txtPassword" minlength="8" required/></td>
+        </tr>
+        
+        <ttr>
+          <td colspan="2">
+            <input type="checkbox" 
+                   id="cbxTandC"
+                   name="cbxTandC"
+                   value="I accept the terms and condition."
+                   required/>
+            <label for="cbxPolicy1">I accept the terms and condition. </label>
+          </td>
+        </tr>
+                
+        
+        <tr>
+          <td colspan="2" align="right">
+            <button id="btnSignup" onclick="validateForm()">Sign up</button>
+          </td>
+          <td><input type="reset"></td>
+        </tr>
+      </table>
+  </form>
+  <script type="text/javascript" src="js/script.js"></script>
+</body>
+</html>
