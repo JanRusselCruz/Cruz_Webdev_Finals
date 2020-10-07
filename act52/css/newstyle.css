@@ -1,0 +1,72 @@
+body{
+  background-image:url("https://static.vecteezy.com/system/resources/thumbnails/000/133/727/original/WoodBackground54342.jpg")
+}
+table{
+  margin-right:auto;
+  margin-left:auto;
+  margin-top:20px;
+}
+legend{
+  font-weight:bold;
+  font-size:30px;
+  font-family:'Arial';
+  text-align:center;
+}
+td{
+  font-weight:bold;
+  font-size:20px;
+  font-family:'Arial'
+}
+input[type=text]{
+  height:30px;
+  width:220px;
+}
+input[type=date]{
+  width:223px;
+  text-align:center;
+  height:30px;
+  font-size:20px;
+}
+select{
+  width:228px;
+  height:30px;
+  font-size:20px;
+}
+input[type=radio]{
+  width:40px;
+}
+input[type=email]{
+  width:220px;
+  height:30px;
+  font-size:20px;
+}
+input[type=tel]{
+  width:220px;
+  height:30px;
+  font-size:20px;
+}
+input[type=password]{
+  width:220px;
+  height:30px;
+  font-size:20px;
+}
+button{
+  height:40px;
+  width:100px;
+  background:skyblue;
+  font-size:20px;
+  font-weight:bold;
+}
+input[type=reset]{
+  height:40px;
+  width:100px;
+  background:skyblue;
+  font-size:20px;
+  font-weight:bold;
+}
+input[]:valid{
+  background:#ADD8E6;
+}
+input:invalid{
+  background:#ffcccb;
+}
