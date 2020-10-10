@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+        
+        <style>
+            .contain{
+                margin-left:30%;
+                margin-top:20px;
+                font-size:25px;
+                border-radius: 10px;
+            }
+            .uname{
+                margin-left: 105px;
+            }
+            .email{
+                margin-left: 158px;
+            }
+            .bday{
+                margin-left: 125px;
+            }
+            .male{
+                margin-left: 135px;
+            }
+            .female{
+                margin-left:60px;
+              }
+            
+            .password{
+                margin-left: 115px;;
+            }
+            .cpassword{
+                margin-left: 20px;
+            }
+            #submit{
+                margin-left:50%;
+                height:50px;
+                width:125px;
+            }
+            #cancel{
+                height:50px;
+                width:125px;
+            }
+            .contain{
+                margin:350px;
+                margin-top:20px;
+                font-size:25px;
+                border:4px solid grey;
+                padding:60px;
+                background:lightblue;
+                border-radius:20px;
+            }
+        </style>       
+    </head>
+    <body>
+        <div class="contain">
+            <h1>Sign up</h1>
+            <hr>
+            <form class="form-group" action="/action_page.php">
+            <div class="form-group">
+                <label for="username">Username:</label>
+                <input type="text" class="uname" id="username" placeholder="Enter Username" required>
+            </div>
+            <div>
+                <label for="email">Email:</label>
+                <input type="email" id="email" class="email" placeholder="Enter E-mail"required><br><br>
+            </div>
+            <div class="form-group">
+                <label for="bday">Birthday: </label>
+                <input type="date" id="bday" class="bday" required><br><br>
+            </div>
+            <div class="form-group form-radio">
+                <label for="male, female">Gender:</label>
+                <input type="radio" id="male" class="male" required>Male
+                <input type="radio" id="female" class="female" required>Female
+            </div>
+            <div class="form-group">
+                <label for="pass">Password:</label>
+                <input type="password" placeholder="Password" id="password" class="password" required>
+            </div>
+            <div>
+                <label for="cpass">Confirm Password:</label>
+                <input type="password" placeholder="Confirm Password" id="confirm_password" class="cpassword" required><br><br>
+            </div>
+            <div>
+                <input type="submit" class="btn btn-primary" id="submit" value="Submit">
+                <input type="button" class="btn btn-primary" id="cancel" value="Cancel">
+            </div>
+        </form>
+        </div>
+        <script src="C:/Users/USER/Desktop/html/js/Sup.js"></script>
+    </body>
+</html>
